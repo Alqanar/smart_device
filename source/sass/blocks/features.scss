@@ -7,15 +7,12 @@
 .features__item {
   position: relative;
   width: 29.6875vw;
+  padding: 4.8438vw 2vw 3.58vw 2.1875vw;
   background-color: $white-color;
   border: 1px solid $light-gray;
   border-left: 3px solid $blue-color;
   min-height: 15.573vw;
   margin-bottom: 1.5625vw;
-  padding-top: 4.8438vw;
-  padding-left: 2.1875vw;
-  padding-bottom: 3.58vw;
-  padding-right: 1.8229vw;
   cursor: pointer;
 
   &:nth-child(even) {
