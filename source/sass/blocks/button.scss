@@ -1,6 +1,6 @@
 .button {
-  display: block;
-  font-family: "Roboto", "Arial", sans-serif;
+  display: inline-block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -10,6 +10,16 @@
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
+  cursor: pointer;
+
+  &--header {
+    &:hover,
+    &:focus {
+      color: $dark-color;
+      background-color: $white-color;
+      outline: none;
+    }
+  }
 
   &--blue {
     font-size: 16px;
