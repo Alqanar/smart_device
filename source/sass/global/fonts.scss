@@ -9,20 +9,20 @@
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   src:
-    url("../fonts/robotoregular.woff2") format("woff2"),
-    url("../fonts/robotoregular.woff") format("woff");
+    url("../fonts/robotocondensedregular.woff2") format("woff2"),
+    url("../fonts/robotocondensedregular.woff") format("woff");
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   src:
-    url("../fonts/robotobold.woff2") format("woff2"),
-    url("../fonts/robotobold.woff") format("woff");
+    url("../fonts/robotocondensedbold.woff2") format("woff2"),
+    url("../fonts/robotocondensedbold.woff") format("woff");
   font-display: swap;
   font-weight: 700;
   font-style: normal;

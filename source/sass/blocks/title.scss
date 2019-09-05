@@ -1,0 +1,13 @@
+.title {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 1.875vw;
+  font-weight: 700;
+
+  &--index {
+    font-size: 4.17vw;
+    line-height: 1;
+    color: $white-color;
+    text-transform: uppercase;
+  }
+}

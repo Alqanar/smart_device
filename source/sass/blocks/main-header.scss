@@ -1,12 +1,15 @@
+.main-header {
+  background-color: $dark-color;
+}
 .main-header__wrapper {
   position: relative;
   z-index: 3;
   display: flex;
-  width: 74.79vw;
+  width: 74vw;
   margin: 0 auto;
   max-width: 1436px;
   padding-top: 1.88vw;
-  padding-left: 1.3vw;
+  padding-left: 0.5vw;
   justify-content: space-between;
 }
 
@@ -17,19 +20,28 @@
 
 .main-header__contacts {
   display: flex;
-  width: 25vw;
-  max-width: 480px;
+  margin-right: 1.56vw;
 }
 
 .main-header__element {
   align-self: center;
-  padding-right: 3.23vw;
+}
+
+.main-header__element + .main-header__element {
+  margin-left: 3.28vw;
 }
 
 .main-header__link {
   position: relative;
+  color: $white-color;
   padding-right: 1vw;
   padding-left: 2.1vw;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+
   &--mail::before,
   &--phone::before {
     position: absolute;
@@ -56,6 +68,7 @@
 
 .main-header__button {
   width: 9.38vw;
+  color: $white-color;
   margin-top: 0.15vw;
   max-width: 180px;
 }
