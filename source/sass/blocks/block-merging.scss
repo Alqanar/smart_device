@@ -1,0 +1,15 @@
+.block-merging {
+  position: relative;
+  background-image: url("../img/triangles@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100vw auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/triangles@2x.jpg");
+  }
+}
+
+.block-merging__features {
+  padding-top: 5.8854vw;
+}

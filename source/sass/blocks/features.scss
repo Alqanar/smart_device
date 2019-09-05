@@ -1,0 +1,91 @@
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features__item {
+  position: relative;
+  width: 29.6875vw;
+  background-color: $white-color;
+  border: 1px solid $light-gray;
+  border-left: 3px solid $blue-color;
+  min-height: 15.573vw;
+  margin-bottom: 1.5625vw;
+  padding-top: 4.8438vw;
+  padding-left: 2.1875vw;
+  padding-bottom: 3.58vw;
+  padding-right: 1.8229vw;
+  cursor: pointer;
+
+  &:nth-child(even) {
+    margin-left: 1.5625vw;
+  }
+
+  &--watch::before,
+  &--providers::before,
+  &--confidentiality::before,
+  &--cost::before {
+    position: absolute;
+    top: 1.979vw;
+    left: 2.1875vw;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--watch::before {
+    width: 1.5104vw;
+    height: 1.822vw;
+    background-image: url(../img/stopwatch-blue.svg);
+  }
+
+  &--providers::before {
+    width: 1.822vw;
+    height: 1.822vw;
+    background-image: url(../img/provider-blue.svg);
+  }
+
+  &--confidentiality::before {
+    width: 1.875vw;
+    height: 1.615vw;
+    background-image: url(../img/detective-blue.svg);
+  }
+
+  &--cost::before {
+    width: 1.822vw;
+    height: 1.822vw;
+    background-image: url(../img/tag-blue.svg);
+  }
+
+  &:hover {
+    color: $white-color;
+    background-color: $blue-color;
+  }
+
+  &--watch:hover::before {
+    background-image: url(../img/stopwatch-white.svg);
+  }
+
+  &--providers:hover::before {
+    background-image: url(../img/provider-white.svg);
+  }
+
+  &--confidentiality:hover::before {
+    background-image: url(../img/detective-white.svg);
+  }
+
+  &--cost:hover::before {
+    background-image: url(../img/tag-white.svg);
+  }
+}
+
+.features__title {
+  font-size: 1.25vw;
+  line-height: 1.7187vw;
+  font-weight: 400;
+}
+
+.features__text {
+  margin: 0;
+  padding-top: 1.042vw;
+}

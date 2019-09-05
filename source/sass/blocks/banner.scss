@@ -1,11 +1,10 @@
 .banner {
   position: relative;
-  // text-align: center;
   background-color: $dark-color;
   background-image: url("../img/back_dark@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: auto auto;
+  background-size: 100vw auto;
   margin-top: -6.1vw;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
