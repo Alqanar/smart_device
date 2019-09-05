@@ -1,0 +1,40 @@
+.button {
+  display: block;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid $white-color;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+
+  &--blue {
+    font-size: 16px;
+    line-height: 18px;
+    color: $white-color;
+    background-color: $blue-color;
+    border: none;
+
+    &:hover,
+    &:focus {
+      color: $blue-color;
+      background-color: $white-color;
+      outline: none;
+    }
+
+    &:active {
+      color: rgba($white-color, 0.3);
+    }
+  }
+
+// @media (min-width: $tablet-width) {
+//   .button--index {
+//     padding: 15px 27px 17px 26px;
+//     font-size: 20px;
+//     line-height: 20px;
+//     max-width: 245px;
+//   }
+}
