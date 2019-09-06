@@ -107,7 +107,7 @@
         </ul>
       </div>
     </section>
-    <section class="communication-form main-content__communication-form">
+    <section class="communication-form communication-form--back main-content__communication-form">
       <div class="wrapper communication-form__wrapper">
         <span class="communication-form__paper-airplan"></span>
         <div class="communication-form__wrapper-content">
@@ -231,29 +231,28 @@
     </section>
   </footer>
   <section class="popup communication-form">
-    <h2 class="communication-form__title communication-form__title--popup">Закажите звонок</h2>
-    <p class="communication-form__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <h2>Закажите звонок</h2>
+    <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
     <form class="communication-form__form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="communication-form__row">
+      <span class="popup-form__row">
         <label class="visual-hidden" for="user-name">Представьтесь</label>
         <input class="communication-form__input" id="user-name" type="text" name="user-name" placeholder="Имя">
-      </p>
-      <p class="communication-form__row">
+      </span>
+      <span class="popup-form__row">
         <label class="visual-hidden" for="tel">Укажите ваш номер телефона</label>
         <input class="communication-form__input" id="tel" type="tel" name="tel" placeholder="Телефон">
-      </p>
-      <p class="communication-form__row">
+      </span>
+      <span class="popup-form__row">
         <label class="visual-hidden" for="question">Напишите свой вопрос</label>
-        <textarea class="communication-form__textarea" id="question" name="question" rows="7" placeholder="Ваш вопрос"></textarea>
-      </p>
-      <button class="button communication-form__button" type="submit">Отправить</button>
-      <p class="communication-form__row">
-        <input class="visual-hidden communication-form__checkbox" type="checkbox" name="personal-data" id="personal-data" checked="">
-        <label class="communication-form__label communication-form__label--checkbox" for="personal-data">Я
-          согласен на обработку персональных данных</label>
-      </p>
+        <textarea class="communication-form__textarea" id="question" name="question" rows="4" placeholder="Ваш вопрос"></textarea>
+      </span>
+      <button class="button button--popup popup__button" type="submit">Отправить</button>
+      <label class="communication-form__label communication-form__label--checkbox popup__label">
+        <input type="checkbox" name="personal-data" id="personal-data" checked="">
+        <p>Я согласен на обработку персональных данных</p>
+      </label>
     </form>
-    <button class="modal-feedback__close" type="button">Закрыть</button>
+    <button class="popup__close" type="button">Закрыть</button>
   </section>
   <div class="modal-overlay"></div>
 </body>
