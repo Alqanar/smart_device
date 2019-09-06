@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 0.31vw;
+}
+
+.social__link {
+  padding: 0.26vw;
+  outline: none;
+
+  &:hover .social__image path,
+  &:focus .social__image path{
+    fill: $blue-color;
+  }
+
+  &:active .social__image path {
+    fill: darken($blue-color, 10%);
+  }
+}
+
+.social__image {
+  width: 1.41vw;
+  height: 1.41vw;
+}

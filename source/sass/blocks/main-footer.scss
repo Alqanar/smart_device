@@ -1,0 +1,129 @@
+.main-footer {
+  color: rgba($dark-gray, 0.5);
+  margin-top: auto;
+}
+
+.main-footer p {
+  margin: 0;
+}
+
+.main-footer__links {
+  border-bottom: 1px solid $border-footer;
+}
+
+.main-footer__links-wrapper,
+.main-footer__legal-data,
+.main-footer__copyright,
+.main-footer__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-footer__links-wrapper {
+  padding: 3.39vw 5.05vw 3.073vw 4.48vw;
+  justify-content: space-between;
+}
+
+.main-footer .main-footer__wrapper-social img {
+  width: 11.2vw;
+  height: 2.71vw;
+  margin-left: 0.36vw;
+}
+
+.main-footer__social {
+  padding-top: 2.5vw;
+}
+
+.main-footer h3 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 0.78vw;
+  line-height: 0.83vw;
+  color: $dark-gray;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  padding-left: 0.10vw;
+  padding-bottom: 1.51vw;
+}
+
+.main-footer__menu {
+  margin-left: 3.44vw;
+}
+
+.main-footer__nav-list {
+  max-width: 26.875vw;
+}
+
+.main-footer__element {
+  width: 50%;
+}
+
+.main-footer__element:nth-child(even) {
+  padding-left: 2.66vw;
+}
+
+.main-footer__item {
+  font-size: 0.78vw;
+  line-height: 1.3vw;
+  color: inherit;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+
+  &:active {
+    color: darken($blue-color, 10%);
+  }
+}
+
+.main-footer .main-footer__office p {
+  font-size: 0.78vw;
+  line-height: 0.83vw;
+}
+
+.main-footer__tel-list {
+  padding-top: 0.47vw;
+}
+
+.main-footer__legal-data {
+  padding: 0.73vw 5.05vw 0.73vw 4.74vw;
+  font-size: 0.68vw;
+  line-height: 1.25vw;
+  text-transform: uppercase;
+  letter-spacing: 0.52px;
+}
+
+.main-footer .main-footer__legal-data p {
+  margin-left: auto;
+}
+
+.main-footer__copyright {
+  width: 23.8vw;
+  max-width: 23.8vw;
+  justify-content: space-between;
+}
+
+.main-footer .main-footer__copyright p {
+  margin-left: 0;
+}
+
+.main-footer__copyright + .main-footer__link {
+  margin-left: 7.4vw;
+  margin-right: auto;
+}
+
+.main-footer__link {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+
+  &:active {
+    color: darken($blue-color, 10%);
+  }
+}
+
