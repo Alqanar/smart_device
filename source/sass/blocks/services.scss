@@ -1,0 +1,179 @@
+.services {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: $white-color;
+  background-color: $dark-gray;
+}
+
+.services__wrapper {
+  padding: 4.58vw 0 6.51vw 1.51vw;
+  max-width: 64vw;
+  margin-top: 5.60vw;
+}
+
+.services__text {
+  margin: 0;
+  font-size: 1.88vw;
+  line-height: 2.6vw;
+}
+
+.services__list {
+  display: flex;
+  padding-top: 2.81vw;
+}
+
+.services__item + .services__item {
+  margin-left: 1.56vw;
+}
+
+.services__link {
+  position: relative;
+  display: inline-block;
+  width: 19.27vw;
+  padding: 2.66vw 8.33vw 2.66vw 2.29vw;
+  font-size: 1.04vw;
+  line-height: 1.56vw;
+  color: inherit;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 19.27vw auto;
+  min-height: 32.29vw;
+
+  &::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 3.28vw;
+    height: 3.28vw;
+    background-color: $blue-color;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    right: 1.25vw;
+    bottom: 1.41vw;
+    width: 0.41vw;
+    height: 0.52vw;
+    background-image: url("../img/vector.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &--production {
+    background-image: 
+      linear-gradient(rgba($dark-gray, 0.8)),
+      url("../img/productionPCB@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.8)),
+      url("../img/productionPCB@2x.jpg");
+    }
+
+    &:hover,
+    &:focus {
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.6)),
+      url("../img/productionPCB@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.6)),
+        url("../img/productionPCB@2x.jpg");
+      }
+    }
+
+    &:active {
+      color: rgba($white-color, 0.5);
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.9)),
+      url("../img/productionPCB@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.9)),
+        url("../img/productionPCB@2x.jpg");
+      }
+    }
+  }
+
+  &--installation {
+    background-image: 
+    linear-gradient(rgba($dark-gray, 0.8)),
+    url("../img/installationPCB@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.8)),
+      url("../img/installationPCB@2x.jpg");
+    }
+
+    &:hover,
+    &:focus {
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.6)),
+      url("../img/installationPCB@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.6)),
+        url("../img/installationPCB@2x.jpg");
+      }
+    }
+
+    &:active {
+      color: rgba($white-color, 0.5);
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.9)),
+      url("../img/installationPCB@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.9)),
+        url("../img/installationPCB@2x.jpg");
+      }
+    }
+  }
+
+  &--component {
+    background-image: 
+    linear-gradient(rgba($dark-gray, 0.8)),
+    url("../img/led-tape@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.8)),
+      url("../img/led-tape@2x.jpg");
+    }
+
+    &:hover,
+    &:focus {
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.6)),
+      url("../img/led-tape@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.6)),
+        url("../img/led-tape@2x.jpg");
+      }
+    }
+
+    &:active {
+      color: rgba($white-color, 0.5);
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.9)),
+      url("../img/led-tape@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.9)),
+        url("../img/led-tape@2x.jpg");
+      }
+    }
+  }
+
+  // &--production
+  // &--installation
+  // &--component  
+}
