@@ -1,8 +1,8 @@
 .button {
   display: inline-block;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 0.73vw;
+  line-height: 0.83vw;
   text-align: center;
   background-color: transparent;
   border: 1px solid $white-color;
@@ -19,11 +19,15 @@
       background-color: $white-color;
       outline: none;
     }
+
+    &:active {
+      background-color: lighten($blue-color, 30%);
+    }
   }
 
   &--blue {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 0.83vw;
+    line-height: 0.94vw;
     color: $white-color;
     background-color: $blue-color;
     border: none;
@@ -36,7 +40,26 @@
     }
 
     &:active {
-      color: rgba($white-color, 0.3);
+      color: $white-color;
+      background-color: lighten($blue-color, 30%);
+    }
+  }
+
+  &--company {
+    font-size: 0.73vw;
+    line-height: 0.73vw;
+    color: $blue-color;
+    border: 1px solid $blue-color;
+    letter-spacing: 0.7px;
+    
+    &:hover,
+    &:focus {
+      color: $white-color;
+      background-color: $blue-color;
+    }
+
+    &:active {
+      background-color: darken($blue-color, 10%);
     }
   }
 

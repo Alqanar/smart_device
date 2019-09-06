@@ -19,6 +19,13 @@
   padding-bottom: 99px;
 }
 
+.banner__wrapper img {
+  width: 36.72vw;
+  height: 26.823vw;
+  margin-top: 14.62vw;
+  margin-right: 0.89vw;
+}
+
 .banner__wrapper-title {
   margin-top: 18.06vw;
 }
@@ -58,20 +65,13 @@
   margin-left: 10vw;
 }
 
-.banner__image {
-  width: 36.72vw;
-  height: 26.823vw;
-  margin-top: 14.62vw;
-  margin-right: 0.89vw;
-}
-
 .banner__link {
   position: absolute;
   bottom: 6.6146vw;
   left: 3.125vw;
   display: inline-block;
-  font-size: 14px;
-  line-height: 1;
+  font-size: 0.73vw;
+  line-height: 0.73vw;
   color: rgba($white-color, 0.5);
   transform: rotate(-90deg);
 
