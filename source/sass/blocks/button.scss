@@ -53,7 +53,8 @@
     }
   }
 
-  &--form {
+  &--form,
+  &--popup {
     width: 14.06vw;
     padding: 0.78vw;
     letter-spacing: 0.7px;
@@ -73,6 +74,11 @@
       color: $white-color;
       background-color: lighten($blue-color, 30%);
     }
+  }
+
+  &--popup {
+    width: 100%;
+    max-width: 100%;
   }
 
 // @media (min-width: $tablet-width) {

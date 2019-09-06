@@ -1,0 +1,108 @@
+.popup {
+  position: fixed;
+  top: 7.08vw;
+  left: 50%;
+  display: none;
+  width: 25.52vw;
+  padding: 1.56vw 2.0vw 1.875vw;
+  margin-left: -12.76vw;
+
+  &--show {
+    display: block;
+    animation-name: increase;
+    animation-duration: 0.4s;
+  }
+}
+
+.popup h2 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 1.46vw;
+  line-height: 2.03vw;
+  font-weight: 400;
+}
+
+.popup h2 + p {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 0.83vw;
+  line-height: 1.1vw;
+  padding-top: 0.73vw;
+}
+
+.popup form {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.popup-form__row {
+  display: inline-block;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin-top: 1.68vw;
+}
+
+.popup-form__row,
+.popup input,
+.popup textarea {
+  width: 100%;
+}
+
+.popup form input,
+.popup form textarea {
+  padding-left: 1.2vw;
+}
+
+.popup__close {
+  position: absolute;
+  top: 1.04vw;
+  right: 1.04vw;
+  width: 0.89vw;
+  height: 0.89vw;
+  font-size: 0;
+  background-color: $blue-color;
+  border: 0;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0.42vw;
+    right: -0.1vw;
+    width: 1.15vw;
+    height: 0.05vw;
+    background-color: $white-color;
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.popup__label {
+  max-width: 95%;
+  margin-left: 0;
+  padding-left: 2.55vw;
+  padding-top: 1.82vw;
+}
+
+.popup form .popup__label p {
+  &::before {
+    top: 1.875vw;
+    left: 0;
+  }
+}
+
+.popup form .popup__label input:checked + p::after {
+  top: 2.14vw;
+  left: 0.21vw; 
+}
+
+.popup__button {
+  color: inherit;
+  margin-top: 1.35vw;
+}
