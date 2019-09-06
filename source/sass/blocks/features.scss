@@ -76,13 +76,15 @@
   }
 }
 
-.features__title {
+.features h3 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 1.25vw;
   line-height: 1.7187vw;
   font-weight: 400;
 }
 
-.features__text {
+.features p {
   margin: 0;
   padding-top: 1.042vw;
 }

@@ -1,0 +1,183 @@
+.communication-form {
+  color: $white-color;
+  background-color: $blue-color;
+  background-image: url("../img/form@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100vw auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/form@2x.jpg");
+  }
+}
+
+.communication-form__wrapper {
+  display: flex;
+  max-width: 64vw;
+  padding-top: 4.84vw;
+  padding-bottom: 5.78vw
+}
+
+.communication-form__paper-airplan {
+  display: block;
+  width: 26.61vw;
+  height: auto;
+  background-image: url("../img/paper_airplane@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0.21vw 3.59vw;
+  background-size: 26.61vw auto;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper_airplane@2x.png");
+  }
+}
+
+.communication-form__wrapper-content {
+  padding-left: 5.94vw;
+}
+
+.communication-form__wrapper-content p + p {
+  padding-top: 0.625vw;
+  padding-left: 0.26vw;
+}
+
+.communication-form p {
+  margin: 0;
+}
+
+.communication-form h2 + p {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 1.875vw;
+  line-height: 2.6vw;
+}
+
+.communication-form form {
+  padding-top: 2.6vw;
+  padding-left: 0.21vw;
+  max-width: 29.69vw;
+}
+
+.communication-form__wrapper-input {
+  display: flex;
+}
+
+.communication-form__row {
+  display: inline-block;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  &--input:nth-of-type(even) {
+    margin-left: 1.61vw;
+  }
+
+  &--textarea {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.communication-form form input,
+.communication-form form textarea {
+  color: inherit;
+  background-color: lighten($blue-color, 5%);
+  border: 1px solid lighten($blue-color, 5%);
+  transition-duration: 0.4s;
+  transition-property: border-color;
+  padding-left: 0.8vw;
+  padding-right: 2.66vw;
+  text-transform: inherit;
+
+  &:hover {
+    border: 1px solid $white-color;
+  }
+
+  &:focus {
+    border: 1px solid darken($blue-color, 20%);
+  }
+
+  &:required:invalid {
+    border: 1px solid $input-error;
+  }
+}
+
+.communication-form form input {
+  height: 2.6vw;
+}
+
+.communication-form form textarea {
+  width: 100%;
+  padding-bottom: 0.73vw;
+  padding-top: 0.73vw;
+}
+
+.communication-form form textarea::-webkit-input-placeholder {
+  color: inherit;
+}
+
+.communication-form__wrapper-button {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.9vw;
+}
+
+.communication-form__button {
+  color: inherit;
+}
+
+.communication-form form .communication-form__label--checkbox input {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+}
+
+.communication-form__label--checkbox {
+  position: relative;
+  display: inline-block;
+  font-size: 0.73vw;
+  line-height: 0.8vw;
+  color: rgba($white-color, 0.8);
+  transition-duration: 0.4s;
+  transition-property: color;
+  cursor: pointer;
+  padding-left: 1.98vw;
+  max-width: 45%;
+  padding-top: 0.47vw;
+  margin-left: 1.67vw;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
+  &:hover,
+  &:focus-within {
+    color: $white-color;
+  }
+}
+
+.communication-form form .communication-form__label--checkbox p {
+  &::before {
+    position: absolute;
+    top: 0.47vw;
+    left: 0.31vw;
+    width: 0.83vw;
+    height: 0.83vw;
+    border: 1px solid rgba($white-color, 0.8);
+    content: "";
+  }
+}
+
+.communication-form form .communication-form__label--checkbox input:checked + p::after {
+  position: absolute;
+  top: 0.73vw;
+  left: 0.52vw;
+  width: 0.47vw;
+  height: 0.26vw;
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}

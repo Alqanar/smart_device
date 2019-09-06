@@ -9,20 +9,22 @@
   margin-top: 3.906vw;
   padding-left: 10.938vw;
   padding-right: 2.083vw;
-  // padding-bottom: 3.70vw;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/2005@2x.jpg");
   }
 }
 
-.about-company__title {
+.about-company h2 {
+  margin: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 1.875vw;
   line-height: 2.604vw;
   font-weight: 400;
   padding-bottom: 24px;
 }
 
-.about-company__text {
+.about-company p {
   margin: 0;
   padding-bottom: 1.2vw;
 }
