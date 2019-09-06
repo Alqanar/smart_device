@@ -10,7 +10,7 @@
   margin-top: 5.60vw;
 }
 
-.services__text {
+.services p {
   margin: 0;
   font-size: 1.88vw;
   line-height: 2.6vw;
@@ -19,10 +19,11 @@
 .services__list {
   display: flex;
   padding-top: 2.81vw;
+  flex-wrap: wrap;
 }
 
-.services__item + .services__item {
-  margin-left: 1.56vw;
+.services__item:not(:nth-child(4n)) {
+  margin-right: 1.56vw;
 }
 
 .services__link {

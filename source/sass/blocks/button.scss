@@ -7,6 +7,8 @@
   background-color: transparent;
   border: 1px solid $white-color;
   border-radius: 5px;
+  transition-duration: 0.4s;
+  transition-property: background-color, color;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
@@ -31,18 +33,6 @@
     color: $white-color;
     background-color: $blue-color;
     border: none;
-
-    &:hover,
-    &:focus {
-      color: $blue-color;
-      background-color: $white-color;
-      outline: none;
-    }
-
-    &:active {
-      color: $white-color;
-      background-color: lighten($blue-color, 30%);
-    }
   }
 
   &--company {
@@ -60,6 +50,28 @@
 
     &:active {
       background-color: darken($blue-color, 10%);
+    }
+  }
+
+  &--form {
+    width: 14.06vw;
+    padding: 0.78vw;
+    letter-spacing: 0.7px;
+    max-width: 14.06vw;
+  }
+
+  &--form,
+  &--blue {
+    &:hover,
+    &:focus {
+      color: $blue-color;
+      background-color: $white-color;
+      outline: none;
+    }
+
+    &:active {
+      color: $white-color;
+      background-color: lighten($blue-color, 30%);
     }
   }
 
