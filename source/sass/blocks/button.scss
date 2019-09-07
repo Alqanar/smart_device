@@ -62,7 +62,8 @@
   }
 
   &--form,
-  &--blue {
+  &--blue,
+  &--popup {
     &:hover,
     &:focus {
       color: $blue-color;
