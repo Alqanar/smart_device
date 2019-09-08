@@ -33,3 +33,42 @@
   padding: 0.83vw 2.6vw;
   margin-top: 0.88vw;
 }
+
+@media (max-width: $tablet-width) {
+  .about-company__wrapper {
+    background-image: url("../img/2005_tablet@1x.jpg");
+    background-size: 31.8vw auto;
+    max-width: 100%;
+    margin-top: 3.26vw;
+    padding-left: 27.34vw;
+    padding-right: 3.125vw;
+    padding-bottom: 5.2vw;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/2005_tablet@2x.jpg");
+    }
+  }
+
+  .about-company h2 {
+    font-size: 4.17vw;
+    line-height: 5.86vw;
+    padding-bottom: 3.26vw;
+  }
+
+  .about-company__wrapper-text {
+    overflow: hidden;
+    max-height: 26.17vw;
+    text-overflow: ellipsis;
+  }
+
+  .about-company p {
+    padding-left: 0.39vw;
+    padding-bottom: 2.6vw;
+  }
+
+  .about-company__button {
+    padding: 1.82vw 6.51vw;
+    margin-top: 4.69vw;
+    margin-left: 0.39vw;
+  }
+}

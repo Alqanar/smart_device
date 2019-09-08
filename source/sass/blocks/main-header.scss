@@ -87,7 +87,7 @@
 
 @media (max-width: $tablet-width) {
   .main-header__wrapper {
-    width: 100vw;
+    width: 100%;
     max-width: 100vw;
     padding-top: 2.6vw;
     padding-left: 3.125vw;
@@ -105,6 +105,10 @@
 
   .main-header__contacts {
     margin-right: 0;
+  }
+
+  .main-header__communication-methods {
+    margin-bottom: 1vw;
   }
 
   .main-header__element + .main-header__element {
