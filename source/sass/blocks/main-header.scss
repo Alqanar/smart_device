@@ -7,10 +7,15 @@
   display: flex;
   width: 74vw;
   margin: 0 auto;
-  max-width: 1436px;
+  max-width: 74.79vw;
   padding-top: 1.88vw;
   padding-left: 0.5vw;
   justify-content: space-between;
+}
+
+.main-header .main-header__logo img {
+  width: 10.47vw;
+  height: 2.71vw;
 }
 
 .main-header__communication-methods {
@@ -28,47 +33,100 @@
 }
 
 .main-header__element + .main-header__element {
-  margin-left: 3.28vw;
+  margin-left: 1.46vw;
 }
 
 .main-header__link {
   position: relative;
+  display: flex;
   color: $white-color;
-  padding-right: 1vw;
+  padding-right: 1.09vw;
   padding-left: 2.1vw;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:hover svg path,
+  &:focus svg path {
     color: $blue-color;
+    fill: $white-color;
   }
+}
 
-  &--mail::before,
-  &--phone::before {
-    position: absolute;
-    background-repeat: no-repeat;
-    content: "";
-  }
+.main-header .main-header__link svg {
+  align-self: center;
+}
 
-  &--mail::before {
-    top: 3px;
-    left: 1px;
-    width: 19px;
-    height: 14px;
-    background-image: url("../img/mail.svg");
-  }  
+.main-header .main-header__link--mail svg {
+  width: 0.99vw;
+  height: 0.73vw;
+}
 
-  &--phone::before {
-    top: 1px;
-    left: 6px;
-    width: 18px;
-    height: 18px;
-    background-image: url("../img/phone-call.svg");
-  }  
+.main-header .main-header__link--phone svg {
+  width: 0.94vw;
+  height: 0.94vw;
+}
+
+.main-header .main-header__link p {
+  margin: 0;
+}
+
+.main-header .main-header__link--mail p {
+  margin-left: 1.04vw;
+}
+
+.main-header .main-header__link--phone p {
+  margin-left: 0.83vw;
 }
 
 .main-header__button {
   width: 9.38vw;
   color: $white-color;
   margin-top: 0.15vw;
-  max-width: 180px;
+  max-width: 9.375vw;
+}
+
+@media (max-width: $tablet-width) {
+  .main-header__wrapper {
+    width: 100vw;
+    max-width: 100vw;
+    padding-top: 2.6vw;
+    padding-left: 3.125vw;
+    padding-right: 2.6vw;
+  }
+  
+  .main-header .main-header__logo img {
+    width: 26.3vw;
+    height: 6.77vw;
+  }
+
+  .main-header__button {
+    display: none;
+  }
+
+  .main-header__contacts {
+    margin-right: 0;
+  }
+
+  .main-header__element + .main-header__element {
+    margin-left: 1.65vw;
+  }
+
+  .main-header .main-header__link p {
+    display: none;
+  }
+
+  .main-header .main-header__link--mail svg {
+    width: 3.255vw;
+    height: 2.34vw;
+  }
+  
+  .main-header .main-header__link--phone svg {
+    width: 3.125vw;
+    height: 3.125vw;
+  }
+
+  .main-header__link {
+    padding-right: 0.52vw;
+  }
+
 }
