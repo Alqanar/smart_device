@@ -24,3 +24,10 @@ body {
     line-height: 2.9vw;
   }
 }
+
+@media (max-width: $mobile-width) {
+  body {
+    font-size: 5vw;
+    line-height: 6.72vw;
+  }
+}
