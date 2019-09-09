@@ -135,6 +135,7 @@
 
   @media (max-width: $mobile-width) {
     .main-header__wrapper {
+      z-index: 4;
       padding-top: 5.6vw;
       padding-left: 5.2vw;
       padding-right: 4.3vw;
@@ -152,7 +153,7 @@
     .main-header__link {
       padding-left: 5.1vw;
     }
-    
+
     .main-header .main-header__link--mail svg {
       width: 7.8vw;
       height: 5.9vw;
