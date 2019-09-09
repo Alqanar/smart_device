@@ -55,16 +55,3 @@ popupForm.addEventListener('submit', function (event) {
     }, 50);
   }
 });
-
-function ellipsizeTextBox(selector) {
-  var el = document.querySelector(selector);
-  var wordArray = el.innerHTML.split(' ');
-  while (el.scrollHeight > el.offsetHeight) {
-    wordArray.pop();
-    el.innerHTML = wordArray.join(' ') + '..';
-  }
-}
-setTimeout(function () {
-  ellipsizeTextBox('.about-company__wrapper-text');
-}, 50);
-

@@ -182,19 +182,20 @@
 
 @media (max-width: $tablet-width) {
   .services__wrapper {
-    padding: 6.58vw 2.65vw 4.3vw 2.6vw;
+    padding: 6.58vw 2.9vw 4.3vw 2.6vw;
     max-width: 100%;
     margin-top: 5.60vw;
   }
 
   .services__list {
     padding-top: 6.38vw;
+    padding-left: 0.65vw;
   }
 
   .services p {
     font-size: 4.17vw;
     line-height: 5.86vw;
-    max-width: 85%;
+    max-width: 87%;
     padding-left: 0.65vw;
   }
 
@@ -212,21 +213,20 @@
   }
 
   .services__link {
-    padding: 5.2vw 9.33vw 2.66vw 6vw;
+    padding: 5.2vw 9.33vw 2.66vw 5.8vw;
     font-size: 2.6vw;
     line-height: 3.9vw;
-    background-size: 93.1vw auto;
+    background-position: left top;
+    background-size: 95vw auto;
     min-height: 33.3vw;
 
     &::before {
-      right: 5px;
-      bottom: 2px;
       width: 8.2vw;
       height: 8.2vw;
     }
 
     &::after {
-      right: 4.25vw;
+      right: 3.4vw;
       bottom: 3.2vw;
       width: 0.8vw;
       height: 1.5vw;
@@ -355,6 +355,7 @@
   .services .services__link p {
     font-size: 2.6vw;
     line-height: 3.9vw;
+    padding-left: 0;
     max-width: 28%;
   }
 }
