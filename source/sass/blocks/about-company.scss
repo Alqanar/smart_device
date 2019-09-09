@@ -24,6 +24,10 @@
   padding-bottom: 24px;
 }
 
+.about-company__wrapper-text--hidden {
+  display: none;
+}
+
 .about-company p {
   margin: 0;
   padding-bottom: 1.2vw;
@@ -41,7 +45,7 @@
     max-width: 100%;
     margin-top: 3.26vw;
     padding-left: 27.34vw;
-    padding-right: 3.125vw;
+    padding-right: 1.125vw;
     padding-bottom: 5.2vw;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -56,9 +60,12 @@
   }
 
   .about-company__wrapper-text {
-    overflow: hidden;
-    max-height: 26.17vw;
-    text-overflow: ellipsis;
+    &--all {
+      display: none;
+    }
+    &--hidden {
+      display: block;
+    }
   }
 
   .about-company p {
@@ -68,7 +75,7 @@
 
   .about-company__button {
     padding: 1.82vw 6.51vw;
-    margin-top: 4.69vw;
+    margin-top: 2.69vw;
     margin-left: 0.39vw;
   }
 }

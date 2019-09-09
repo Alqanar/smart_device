@@ -184,3 +184,9 @@
   background-size: 100%;
   content: "";
 }
+
+@media (max-width: $tablet-width) {
+  .communication-form__wrapper-input {
+    flex-wrap: wrap;
+  }
+}
