@@ -161,7 +161,10 @@
   }
 }
 
-.communication-form form .communication-form__label--checkbox p {
+.communication-form form .communication-form__label--checkbox small {
+  font-size: 0.73vw;
+  line-height: 0.8vw;
+
   &::before {
     position: absolute;
     top: 0.47vw;
@@ -173,7 +176,7 @@
   }
 }
 
-.communication-form form .communication-form__label--checkbox input:checked + p::after {
+.communication-form form .communication-form__label--checkbox input:checked + small::after {
   position: absolute;
   top: 0.73vw;
   left: 0.52vw;
@@ -261,13 +264,18 @@
     padding-top: 1.17vw;
   }
 
-  .communication-form form .communication-form__label--checkbox p::before {
+  .communication-form form .communication-form__label--checkbox small {
+    font-size: 1.82vw;
+    line-height: 2.1vw;
+  
+    &::before {
     top: 1.3vw;
     width: 2.21vw;
     height: 2.21vw;
+    }
   }
 
-  .communication-form form .communication-form__label--checkbox input:checked + p::after {
+  .communication-form form .communication-form__label--checkbox input:checked + small::after {
     top: 2vw;
     left: 1vw;
     width: 1.04vw;
@@ -283,6 +291,7 @@
   }
 
   .communication-form__wrapper-content {
+    width: 100vw;
     padding-left: 0;
   }
 
@@ -342,14 +351,19 @@
     margin-left: 0;
   }
 
-  .communication-form form .communication-form__label--checkbox p::before {
-    top: 9.8vw;
-    left: 0;
-    width: 5.3vw;
-    height: 5.1vw;
+  .communication-form form .communication-form__label--checkbox small {
+    font-size: 4.4vw;
+    line-height: 5.1vw;
+  
+    &::before {
+      top: 9.8vw;
+      left: 0;
+      width: 5.3vw;
+      height: 5.1vw;
+    }
   }
 
-  .communication-form form .communication-form__label--checkbox input:checked+p::after {
+  .communication-form form .communication-form__label--checkbox input:checked + small::after {
     top: 11vw;
     left: 1.2vw;
     width: 3.4vw;

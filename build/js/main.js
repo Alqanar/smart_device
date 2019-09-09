@@ -6,8 +6,8 @@ var popupClose = popup.querySelector('.popup__close');
 var overlay = document.querySelector('.overlay');
 var nameInut = popup.querySelector('#user-name');
 var popupForm = popup.querySelector('form');
-var telInput = popup.querySelector('#tel');
-var questionTextarea = popup.querySelector('#question');
+var telInput = popup.querySelector('#tel-popup');
+var questionTextarea = popup.querySelector('#question-popup');
 
 var footer = document.querySelector('.main-footer');
 var menuContainer = footer.querySelector('.main-footer__menu');

@@ -154,6 +154,7 @@
 
 @media (max-width: $mobile-width) {
   .banner {
+    overflow: hidden;
     background-image: url("../img/back_dark_mobile@1x.jpg");
     background-position: top center;
     margin-top: -19vw;
