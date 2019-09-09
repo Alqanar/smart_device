@@ -214,8 +214,6 @@
 
   .services__link {
     padding: 5.2vw 9.33vw 2.66vw 5.8vw;
-    font-size: 2.6vw;
-    line-height: 3.9vw;
     background-position: left top;
     background-size: 95vw auto;
     min-height: 33.3vw;
@@ -261,7 +259,6 @@
       }
   
       &:active {
-        color: rgba($white-color, 0.5);
         background-image: 
         linear-gradient(rgba($dark-gray, 0.9)),
         url("../img/productionPCB_tablet@1x.jpg");
@@ -299,7 +296,6 @@
       }
   
       &:active {
-        color: rgba($white-color, 0.5);
         background-image: 
         linear-gradient(rgba($dark-gray, 0.9)),
         url("../img/installationPCB_tablet@1x.jpg");
@@ -338,7 +334,6 @@
       }
   
       &:active {
-        color: rgba($white-color, 0.5);
         background-image: 
         linear-gradient(rgba($dark-gray, 0.9)),
         url("../img/led-tape_tablet@1x.jpg");
@@ -357,5 +352,164 @@
     line-height: 3.9vw;
     padding-left: 0;
     max-width: 28%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .services__wrapper {
+    padding: 15.58vw 4.7vw 10.7vw;
+  }
+
+  .services p {
+    font-size: 8.8vw;
+    line-height: 12.4vw;
+    padding-left: 3vw;
+    max-width: 100%;
+  }
+
+  .services__list {
+    padding-top: 13.3vw;
+    padding-left: 0;
+  }
+
+  .services__item {
+    margin-bottom: 9.3vw;
+  }
+
+  .services__link {
+    background-size: 90.6vw auto;
+    padding-top: 6.2vw;
+    padding-left: 10.8vw;
+    min-height: 80vw;
+
+    &::before {
+      width: 19.7vw;
+      height: 19.7vw;
+    }
+
+    &::after {
+      right: 8.6vw;
+      bottom: 7.2vw;
+      width: 2.2vw;
+      height: 4.25vw;
+    }
+
+    &--production {
+      background-image: 
+        linear-gradient(rgba($dark-gray, 0.8)),
+        url("../img/productionPCB_mobile@1x.jpg");
+  
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.8)),
+        url("../img/productionPCB_mobile@2x.jpg");
+      }
+  
+      &:hover,
+      &:focus {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.6)),
+        url("../img/productionPCB_mobile@1x.jpg");
+  
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: 
+          linear-gradient(rgba($dark-gray, 0.6)),
+          url("../img/productionPCB_mobile@2x.jpg");
+        }
+      }
+  
+      &:active {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.9)),
+        url("../img/productionPCB_mobile@1x.jpg");
+  
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: 
+          linear-gradient(rgba($dark-gray, 0.9)),
+          url("../img/productionPCB_mobile@2x.jpg");
+        }
+      }
+    }
+  
+    &--installation {
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.8)),
+      url("../img/installationPCB_mobile@1x.jpg");
+  
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.8)),
+        url("../img/installationPCB_mobile@2x.jpg");
+      }
+  
+      &:hover,
+      &:focus {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.6)),
+        url("../img/installationPCB_mobile@1x.jpg");
+  
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: 
+          linear-gradient(rgba($dark-gray, 0.6)),
+          url("../img/installationPCB_mobile@2x.jpg");
+        }
+      }
+  
+      &:active {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.9)),
+        url("../img/installationPCB_mobile@1x.jpg");
+  
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: 
+          linear-gradient(rgba($dark-gray, 0.9)),
+          url("../img/installationPCB_mobile@2x.jpg");
+        }
+      }
+    }
+  
+    &--component {
+      background-image: 
+      linear-gradient(rgba($dark-gray, 0.8)),
+      url("../img/led-tape_mobile@1x.jpg");
+      padding-top: 9.3vw;
+  
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.8)),
+        url("../img/led-tape_mobile@2x.jpg");
+      }
+  
+      &:hover,
+      &:focus {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.6)),
+        url("../img/led-tape_mobile@1x.jpg");
+  
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: 
+          linear-gradient(rgba($dark-gray, 0.6)),
+          url("../img/led-tape_mobile@2x.jpg");
+        }
+      }
+  
+      &:active {
+        background-image: 
+        linear-gradient(rgba($dark-gray, 0.9)),
+        url("../img/led-tape_mobile@1x.jpg");
+  
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: 
+          linear-gradient(rgba($dark-gray, 0.9)),
+          url("../img/led-tape_mobile@2x.jpg");
+        }
+      }
+    }
+  }
+
+  .services .services__link p {
+    font-size: 6.25vw;
+    line-height: 9.4vw;
+    max-width: 70%;
   }
 }
