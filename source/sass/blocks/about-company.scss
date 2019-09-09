@@ -45,7 +45,7 @@
     max-width: 100%;
     margin-top: 3.26vw;
     padding-left: 27.34vw;
-    padding-right: 1.125vw;
+    padding-right: 3vw;
     padding-bottom: 5.2vw;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -77,5 +77,39 @@
     padding: 1.82vw 6.51vw;
     margin-top: 2.69vw;
     margin-left: 0.39vw;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-company__wrapper {
+    background-image: none;
+    margin-top: 12vw;
+    padding-left: 4.4vw;
+    padding-right: 4.5vw;
+    padding-bottom: 14.8vw;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: none;
+    }
+  }
+
+  .about-company h2 {
+    font-size: 8.75vw;
+    line-height: 12.3vw;
+    padding-bottom: 7.25vw;
+  }
+
+  .about-company p {
+    padding-left: 1vw;
+  }
+
+  .about-company p:not(:last-child) {
+    padding-bottom: 14.5vw;
+  }
+
+  .about-company__button {
+    padding: 4.2vw 15.4vw;
+    margin-top: 7.69vw;
+    margin-left: 1vw;
   }
 }
