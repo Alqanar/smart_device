@@ -14,7 +14,10 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <span class="main-header__logo">
-        <img src="img/logo.svg" width="201" height="52" alt="Логотип компании Smart Device">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logo_mobile.svg">
+          <img src="img/logo.svg" width="201" height="52" alt="Логотип компании Smart Device">
+        </picture>
       </span>
       <div class="main-header__communication-methods">
         <ul class="same-list main-header__contacts">
@@ -57,15 +60,17 @@
       <div class="wrapper banner__wrapper">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="button button--blue banner__button" href="#">Получить бесплатную консультацию</a>
+        <a class="button button--blue banner__button banner__button--hidden" href="#">Получить бесплатную
+          консультацию</a>
+        <a class="button button--blue banner__button banner__button--mobile" href="#">Бесплатная консультация</a>
         <a class="link banner__link" href="#features">Скролл вниз</a>
         <picture>
-          <!-- <source type="image/webp" media="(max-width: 767px)"
-            srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x"> -->
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/PCB_mobile@1x.webp 1x, img/PCB_mobile@2x.webp 2x">
           <source type="image/webp" media="(max-width: 1022px)"
             srcset="img/PCB_tablet@1x.webp 1x, img/PCB_tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/PCB@1x.webp 1x, img/PCB@2x.webp 2x">
-          <!-- <source media="(max-width: 767px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x"> -->
+          <source media="(max-width: 767px)" srcset="img/PCB_mobile@1x.png 1x, img/PCB_mobile@2x.png 2x">
           <source media="(max-width: 1022px)" srcset="img/PCB_tablet@1x.png 1x, img/PCB_tablet@2x.png 2x">
           <img src="img/PCB@1x.png" srcset="img/PCB@2x.png 2x" alt="Изображение печатных плат">
         </picture>
