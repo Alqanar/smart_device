@@ -27,6 +27,7 @@
     top: 1.979vw;
     left: 2.1875vw;
     background-repeat: no-repeat;
+    background-size: 100%;
     content: "";
   }
 
@@ -74,6 +75,10 @@
   &--cost:hover::before {
     background-image: url(../img/tag-white.svg);
   }
+
+  &:hover h3 {
+    color: $white-color;
+  }
 }
 
 .features h3 {
@@ -81,10 +86,75 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 1.25vw;
   line-height: 1.7187vw;
+  color: $blue-color;
   font-weight: 400;
 }
 
 .features p {
   margin: 0;
   padding-top: 1.042vw;
+}
+
+@media (max-width: $tablet-width) {
+  .features {
+    padding-left: 3.125vw;
+    padding-right: 3.125vw;
+  }
+
+  .features__list {
+    justify-content: space-between;
+  }
+
+  .features__item {
+    width: 44.92vw;
+    padding: 8.46vw 2.6vw 2.6vw 3.39vw;
+    border-left-width: 2px;
+    min-height: 30.21vw;
+    margin-bottom: 4vw;
+  
+    &:nth-child(even) {
+      margin-left: 0;
+    }
+  
+    &--watch::before,
+    &--providers::before,
+    &--confidentiality::before,
+    &--cost::before {
+      top: 3.2vw;
+      left: 3.6vw;
+    }
+  
+    &--watch::before {
+      width: 3.78vw;
+      height: 4.56vw;
+      background-image: url(../img/stopwatch-blue.svg);
+    }
+  
+    &--providers::before {
+      width: 4.17vw;
+      height: 4.17vw;
+      background-image: url(../img/provider-blue.svg);
+    }
+  
+    &--confidentiality::before {
+      width: 3.9vw;
+      height: 3.39vw;
+      background-image: url(../img/detective-blue.svg);
+    }
+  
+    &--cost::before {
+      width: 4.17vw;
+      height: 4.17vw;
+      background-image: url(../img/tag-blue.svg);
+    }
+  }
+
+  .features h3 {
+    font-size: 3.125vw;
+    line-height: 4.3vw;
+  }
+  
+  .features p {
+    padding-top: 1.3vw;
+  }
 }

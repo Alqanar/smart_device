@@ -55,4 +55,3 @@ popupForm.addEventListener('submit', function (event) {
     }, 50);
   }
 });
-

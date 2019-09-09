@@ -6,13 +6,14 @@
   text-align: center;
   background-color: transparent;
   border: 1px solid $white-color;
-  border-radius: 5px;
+  border-radius: 0.26vw;
   transition-duration: 0.4s;
   transition-property: background-color, color;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
+  letter-spacing: 0.7px;
 
   &--header {
     &:hover,
@@ -33,6 +34,7 @@
     color: $white-color;
     background-color: $blue-color;
     border: none;
+    letter-spacing: 0;
   }
 
   &--company {
@@ -40,7 +42,6 @@
     line-height: 0.73vw;
     color: $blue-color;
     border: 1px solid $blue-color;
-    letter-spacing: 0.7px;
     
     &:hover,
     &:focus {
@@ -57,8 +58,6 @@
   &--popup {
     width: 14.06vw;
     padding: 0.78vw;
-    letter-spacing: 0.7px;
-    max-width: 14.06vw;
   }
 
   &--form,
@@ -81,12 +80,22 @@
     width: 100%;
     max-width: 100%;
   }
+}
 
-// @media (min-width: $tablet-width) {
-//   .button--index {
-//     padding: 15px 27px 17px 26px;
-//     font-size: 20px;
-//     line-height: 20px;
-//     max-width: 245px;
-//   }
+@media (max-width: $tablet-width) {
+  .button {
+    font-size: 1.82vw;
+    line-height: 2.08vw;
+
+    &--blue {
+      font-size: 2.08vw;
+      line-height: 2.34vw;
+      letter-spacing: 0.8px;
+    }
+
+    &--form {
+      width: 36.46vw;
+      padding: 1.95vw 0.52vw
+    }
+  }
 }

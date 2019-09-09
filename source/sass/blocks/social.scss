@@ -11,17 +11,28 @@
   padding: 0.26vw;
   outline: none;
 
-  &:hover .social__image path,
-  &:focus .social__image path{
+  &:hover svg path,
+  &:focus svg path{
     fill: $blue-color;
   }
 
-  &:active .social__image path {
+  &:active svg path {
     fill: darken($blue-color, 10%);
   }
 }
 
-.social__image {
+.social .social__link svg {
   width: 1.41vw;
   height: 1.41vw;
+}
+
+@media (max-width: $tablet-width) {
+  .social .social__link svg {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+
+  .social__item:not(:last-child) {
+    margin-right: 1.6vw;
+  }
 }

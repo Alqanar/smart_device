@@ -11,5 +11,21 @@
 }
 
 .block-merging__features {
-  padding-top: 5.8854vw;
+  padding-top: 5.78vw;
 }
+
+
+@media (max-width: $tablet-width) {
+  .block-merging {
+    background-image: url("../img/triangles_tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/triangles_tablet@2x.jpg");
+    }
+  }
+
+  .block-merging__features {
+    padding-top: 7.2vw;
+  }
+}
+

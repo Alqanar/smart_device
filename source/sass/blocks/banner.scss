@@ -2,7 +2,7 @@
   background-color: $dark-color;
   background-image: url("../img/back_dark@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
   background-size: 100vw auto;
   margin-top: -6.1vw;
 
@@ -13,20 +13,15 @@
 
 .banner__wrapper {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 99px;
+  padding-bottom: 14.31vw;
 }
 
 .banner__wrapper img {
+  position: absolute;
+  top: 14.62vw;
+  right: 0.89vw;
   width: 36.72vw;
   height: 26.823vw;
-  margin-top: 14.62vw;
-  margin-right: 0.89vw;
-}
-
-.banner__wrapper-title {
-  margin-top: 18.06vw;
 }
 
 .banner h1 {
@@ -34,10 +29,10 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 4.17vw;
   line-height: 4.17vw;
-  text-align: center;
   color: $white-color;
   font-weight: 700;
-  padding-left: 1.2vw;
+  padding-top: 18.06vw;
+  padding-left: 4.8vw;
   letter-spacing: 0.3vw;
   text-transform: uppercase;
 }
@@ -49,8 +44,8 @@
   line-height: 1.771vw;
   text-align: start;
   color: $white-color;
+  max-width: 41.67vw;
   padding-top: 1.771vw;
-  flex-wrap: wrap;
   padding-left: 10vw;
 
   &::before {
@@ -73,7 +68,7 @@
 
 .banner__link {
   position: absolute;
-  bottom: 6.6146vw;
+  bottom: 6.76vw;
   left: 3.125vw;
   display: inline-block;
   font-size: 0.73vw;
@@ -85,5 +80,70 @@
   &:focus {
     color: $white-color;
     outline: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .banner {
+    background-image: url("../img/back_dark_tablet@1x.jpg");
+    background-position: top center;
+    margin-top: -9.6vw;
+  
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/back_dark_tablet@2x.jpg");
+    }
+  }
+
+  .banner__wrapper {
+    padding-left: 3.125vw;
+    padding-bottom: 21.22vw;
+  }
+
+  .banner__wrapper-title {
+    margin-top: 24.48vw;;
+    margin-left: 8.3vw;
+  }
+
+  .banner h1 {
+    font-size: 7.8vw;
+    line-height: 9.2vw;
+    text-align: start;
+    padding-left: 8.3vw;
+    padding-top: 23.96vw;
+    letter-spacing: 4.2px;
+    max-width: 48.8vw;
+  }
+
+  .banner p {
+    font-size: 2.34vw;
+    line-height: 3.65vw;
+    padding-top: 3.78vw;
+    padding-left: 15vw;
+    max-width: 61.2vw;
+  
+    &::before {
+      top: 5.776vw;
+      left: 8.6vw;
+      width: 4.3vw;
+      height: .26vw;
+    }
+  }
+
+  .banner__button {
+    padding: 2.34vw 4.17vw 2.47vw 4.04vw;
+    margin-top: 7.1vw;
+    letter-spacing: 0.8px;
+    margin-left: 15vw;
+  }
+
+  .banner__wrapper img {
+    right: 0;
+    width: 33.85vw;
+    height: 44.27vw;
+    margin-right: 0;
+  }
+
+  .banner__link {
+    display: none;
   }
 }
