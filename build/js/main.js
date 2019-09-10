@@ -23,7 +23,6 @@ var closePopup = function () {
   overlay.classList.remove('overlay--show');
   popup.classList.remove('popup--error');
   body.style.overflow = 'auto';
-  body.style.height = 'initial';
 };
 
 buttonConacts.addEventListener('click', function (event) {
@@ -31,7 +30,6 @@ buttonConacts.addEventListener('click', function (event) {
   popup.classList.add('popup--show');
   overlay.classList.add('overlay--show');
   body.style.overflow = 'hidden';
-  body.style.height = '211.7vw';
   nameInut.focus();
 });
 

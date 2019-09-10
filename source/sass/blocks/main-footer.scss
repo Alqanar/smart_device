@@ -67,12 +67,12 @@
 .main-footer__navigation {
   display: flex;
   flex-wrap: wrap;
+  max-width: 27vw;
 }
 
 .main-footer__nav-list {
-  max-width: 26.875vw;
-  max-height: 5.2vw;
   flex-direction: column;
+  max-width: 62%;
 }
 
 .main-footer__element {
@@ -202,6 +202,10 @@
     font-size: 1.95vw;
     line-height: 2.08vw;
     padding-bottom: 3.4vw;
+  }
+
+  .main-footer__navigation {
+    max-width: 100%;
   }
 
   .main-footer__nav-list {

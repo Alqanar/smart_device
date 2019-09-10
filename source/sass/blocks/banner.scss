@@ -18,40 +18,42 @@
 
 .banner__wrapper img {
   position: absolute;
-  top: 14.62vw;
-  right: 0.89vw;
+  top: 14.8vw;
+  right: 0.85vw;
   width: 36.72vw;
   height: 26.823vw;
 }
 
-.banner h1 {
+.banner h1, .banner p {
+  position: relative;
   margin: 0;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  color: $white-color;
+}
+
+.banner h1 {
+  z-index: 2;
+  font-family: "Roboto Condensed","Arial",sans-serif;
   font-size: 4.17vw;
   line-height: 4.17vw;
-  color: $white-color;
   font-weight: 700;
-  padding-top: 18.06vw;
-  padding-left: 4.8vw;
-  letter-spacing: 0.3vw;
+  letter-spacing: .29vw;
   text-transform: uppercase;
+  padding-top: 18.13vw;
+  padding-left: 4.62vw;
 }
 
 .banner p {
-  position: relative;
-  margin: 0;
   font-size: 1.146vw;
-  line-height: 1.771vw;
+  line-height: 1.85vw;
   text-align: start;
-  color: $white-color;
   max-width: 41.67vw;
-  padding-top: 1.771vw;
-  padding-left: 10vw;
+  padding-top: 1.8vw;
+  padding-left: 9.71vw;
 
   &::before {
     position: absolute;
-    top: 2.6563vw;
-    left: 5.052vw;
+    top: 2.65vw;
+    left: 4.85vw;
     width: 3.4375vw;
     height: 0.1042vw;
     background-color: $white-color;
@@ -60,10 +62,11 @@
 }
 
 .banner__button {
-  padding: 0.8854vw 2.395vw 0.9896vw;
-  margin-top: 2.3438vw;
+  padding: 0.95vw 2.4vw;
+  margin-top: 2.2vw;
   letter-spacing: 0.8px;
-  margin-left: 10vw;
+  margin-left: 9.7vw;
+  max-width: 21.3vw;
 
   &--mobile {
     display: none;
@@ -72,8 +75,8 @@
 
 .banner__link {
   position: absolute;
-  bottom: 6.76vw;
-  left: 3.125vw;
+  bottom: 6.7vw;
+  left: 2.85vw;
   display: inline-block;
   font-size: 0.73vw;
   line-height: 0.73vw;
@@ -136,13 +139,15 @@
   }
 
   .banner__button {
-    padding: 2.34vw 4.17vw 2.47vw 4.04vw;
+    padding: 2.34vw 4vw 2.47vw 4.04vw;
     margin-top: 7.1vw;
     letter-spacing: 0.8px;
     margin-left: 15vw;
+    max-width: 50vw;
   }
 
   .banner__wrapper img {
+    top: 14vw;
     right: 0;
     width: 33.85vw;
     height: 44.27vw;
@@ -167,18 +172,16 @@
   }
 
   .banner__wrapper {
-    padding-left: 4.6vw;
+    padding-left: 4.8vw;
     padding-right: 4.6vw;
-    padding-bottom: 21vw;
+    padding-bottom: 21.74vw;
   }
 
   .banner h1 {
-    position: relative;
-    z-index: 3;
     font-size: 12.5vw;
     line-height: 14.9vw;
     padding-left: 0;
-    padding-top: 89.1vw;
+    padding-top: 89.3vw;
     letter-spacing: 2.8px;
     max-width: 100%;
   }
@@ -205,6 +208,7 @@
     margin-top: 12.5vw;
     padding-top: 5vw;
     padding-bottom: 5.47vw;
+    max-width: 100%;
 
     &--hidden {
       display: none;

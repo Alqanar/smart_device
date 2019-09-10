@@ -5,7 +5,7 @@
 }
 
 .services__wrapper {
-  padding: 4.58vw 0 6.51vw 1.51vw;
+  padding: 4.6vw 0 6.6vw 1.51vw;
   max-width: 64vw;
 }
 
@@ -17,12 +17,13 @@
 
 .services__list {
   display: flex;
-  padding-top: 2.81vw;
+  padding-top: 1.25vw;
   flex-wrap: wrap;
 }
 
-.services__item:not(:nth-child(4n)) {
+.services__item {
   margin-right: 1.56vw;
+  margin-top: 1.56vw;
 }
 
 .services__link {
@@ -186,7 +187,7 @@
   }
 
   .services__list {
-    padding-top: 6.38vw;
+    padding-top: 6.4vw;
     padding-left: 0.65vw;
   }
 
@@ -202,16 +203,14 @@
     width: 100%;
   }
 
-  .services__item:not(:nth-child(4n)) {
+  .services__item {
+    margin-bottom: 6.05vw;
+    margin-top: 0;
     margin-right: 0;
   }
 
-  .services__item {
-    margin-bottom: 6vw;
-  }
-
   .services__link {
-    padding: 5.2vw 9.33vw 2.66vw 5.8vw;
+    padding: 5.4vw 9.33vw 2.66vw 5.9vw;
     background-position: left top;
     background-size: 95vw auto;
     min-height: 33.3vw;

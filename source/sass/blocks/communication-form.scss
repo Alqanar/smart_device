@@ -5,7 +5,7 @@
   &--back {
     background-image: url("../img/form@1x.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 -3.1vw;
     background-size: 100vw auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -23,7 +23,7 @@
 
 .communication-form__paper-airplan {
   display: block;
-  width: 26.61vw;
+  width: 27vw;
   height: auto;
   background-image: url("../img/paper_airplane@1x.png");
   background-repeat: no-repeat;
@@ -36,7 +36,8 @@
 }
 
 .communication-form__wrapper-content {
-  padding-left: 5.94vw;
+  padding-left: 5.55vw;
+  max-width: 57%;
 }
 
 .communication-form__wrapper-content p + p {
@@ -57,7 +58,7 @@
 .communication-form form {
   padding-top: 2.6vw;
   padding-left: 0.21vw;
-  max-width: 29.69vw;
+  max-width: 30vw;
 }
 
 .communication-form__wrapper-input {
@@ -134,7 +135,7 @@
 .communication-form__wrapper-button {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1.9vw;
+  margin-top: 1.8vw;
 }
 
 .communication-form__button {
@@ -207,6 +208,10 @@
     max-width: 100%;
     padding-top: 10.29vw;
     padding-bottom: 13.41vw;
+  }
+
+  .communication-form__wrapper-content {
+    max-width: 100%;
   }
 
   .communication-form {
