@@ -1,16 +1,17 @@
 .features__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .features__item {
   position: relative;
   width: 29.6875vw;
-  padding: 4.8438vw 2vw 3.58vw 2.1875vw;
+  padding: 5vw 2vw 3.58vw 2.1vw;
   background-color: $white-color;
-  border: 1px solid $light-gray;
-  border-left: 3px solid $blue-color;
+  border: 0.05vw solid $light-gray;
+  border-left: 0.16vw solid $blue-color;
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
   min-height: 15.573vw;
   margin-bottom: 1.5625vw;
   cursor: pointer;
@@ -92,7 +93,7 @@
 
 .features p {
   margin: 0;
-  padding-top: 1.042vw;
+  padding-top: 0.96vw;
 }
 
 @media (max-width: $tablet-width) {
@@ -177,7 +178,7 @@
     }
 
     &--cost {
-      padding-top: 20.8vw;
+      padding-top: 21.5vw;
     }
   
     &--watch::before,

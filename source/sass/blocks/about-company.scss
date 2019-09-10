@@ -1,13 +1,11 @@
 .about-company__wrapper {
   position: relative;
+  padding: 3.9vw 2.1vw 5.7vw 10.9vw;
   background-image: url("../img/2005@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: 0vw 4vw;
   background-size: 11.51vw auto;
   max-width: 64vw;
-  padding-top: 3.9vw;
-  padding-left: 10.9vw;
-  padding-right: 2.1vw;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/2005@2x.jpg");
@@ -33,14 +31,15 @@
 }
 
 .about-company__button {
-  padding: 0.83vw 2.6vw;
-  margin-top: 0.88vw;
+  padding: .76vw 2.6vw;
+  margin-top: 0.9vw;
 }
 
 @media (max-width: $tablet-width) {
   .about-company__wrapper {
-    padding: 3.26vw 3vw 5.2vw 27.34vw;
+    padding: 3.26vw 3vw 10.8vw 27.34vw;
     background-image: url("../img/2005_tablet@1x.jpg");
+    background-position: 0 3vw;;
     background-size: 31.8vw auto;
     max-width: 100%;
 
@@ -52,7 +51,7 @@
   .about-company h2 {
     font-size: 4.17vw;
     line-height: 5.86vw;
-    padding-bottom: 3.26vw;
+    padding-bottom: 3.2vw;
   }
 
   .about-company__wrapper-text {
@@ -66,19 +65,19 @@
 
   .about-company p {
     padding-left: 0.39vw;
-    padding-bottom: 2.6vw;
+    padding-bottom: 2.4vw;
   }
 
   .about-company__button {
     padding: 1.82vw 6.51vw;
-    margin-top: 2.69vw;
+    margin-top: 3vw;
     margin-left: 0.39vw;
   }
 }
 
 @media (max-width: $mobile-width) {
   .about-company__wrapper {
-    padding: 12vw 4.5vw 14.8vw 4.4vw;
+    padding: 11.3vw 4.5vw 20.5vw 4.4vw;
     background-image: none;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -89,7 +88,7 @@
   .about-company h2 {
     font-size: 8.75vw;
     line-height: 12.3vw;
-    padding-bottom: 7.25vw;
+    padding-bottom: 7.2vw;
   }
 
   .about-company p {
@@ -97,12 +96,12 @@
   }
 
   .about-company p:not(:last-child) {
-    padding-bottom: 14.5vw;
+    padding-bottom: 14.4vw;
   }
 
   .about-company__button {
     padding: 4.2vw 15.4vw;
-    margin-top: 7.69vw;
+    margin-top: 8vw;
     margin-left: 1vw;
   }
 }
