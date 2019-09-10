@@ -96,6 +96,7 @@
   background-color: $blue-color;
   border: 0;
   cursor: pointer;
+  outline: none;
 
   &::before,
   &::after {
@@ -115,6 +116,19 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+    height: 0.1vw;
+  }
+
+  &:active::before,
+  &:active::after{
+    height: 0.1vw;
+    background-color: darken($blue-color, 20%);
+  }
 }
 
 .popup__label {
@@ -124,14 +138,14 @@
   padding-top: 1.82vw;
 }
 
-.popup form .popup__label p {
+.popup form .popup__label small {
   &::before {
     top: 1.875vw;
     left: 0;
   }
 }
 
-.popup form .popup__label input:checked + p::after {
+.popup form .popup__label input:checked + small::after {
   top: 2.14vw;
   left: 0.21vw; 
 }
