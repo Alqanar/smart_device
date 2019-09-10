@@ -67,28 +67,16 @@
         <picture>
           <source type="image/webp" media="(max-width: 767px)"
             srcset="img/PCB_mobile@1x.webp 1x, img/PCB_mobile@2x.webp 2x">
-
-
+          <source type="image/webp" media="(max-width: 1022px)"
+            srcset="img/PCB_tablet@1x.webp 1x, img/PCB_tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/PCB@1x.webp 1x, img/PCB@2x.webp 2x">
           <!-- 1х: 294px; 2x: 588px -->
           <source media="(max-width: 767px)" srcset="img/PCB_mobile@1x.png 1x, img/PCB_mobile@2x.png 2x">
           <!-- 1х: 260px; 2x: 520px -->
           <source media="(max-width: 1022px)" srcset="img/PCB_tablet@1x.png 1x, img/PCB_tablet@2x.png 2x">
           <!-- 1х: 705px; 2x: 1410px -->
-          <img src="img/PCB@1x.png" alt="Изображение печатных плат">
+          <img src="img/PCB@1x.png" srcset="img/PCB@2x.png 2x" alt="Изображение печатных плат">
         </picture>
-        <!-- <picture>
-          <source type="image/webp" media="(max-width: 767px)"
-            srcset="img/PCB_mobile@1x.webp 1x, img/PCB_mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1022px)"
-            srcset="img/PCB_tablet@1x.webp 1x, img/PCB_tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/PCB@1x.webp 1x, img/PCB@2x.webp 2x">
-          <!- 1х: 294px; 2x: 588px -->
-        <!-- <source media="(max-width: 767px)" srcset="img/PCB_mobile@1x.png 1x, img/PCB_mobile@2x.png 2x"> -->
-        <!-- 1х: 260px; 2x: 520px -->
-        <!-- <source media="(max-width: 1022px)" srcset="img/PCB_tablet@1x.png 1x, img/PCB_tablet@2x.png 2x"> -->
-        <!-- 1х: 705px; 2x: 1410px -->
-        <!-- <img src="img/PCB@1x.png" srcset="img/PCB@2x.png 2x" alt="Изображение печатных плат"> -->
-        <!-- </picture> -->
       </div>
     </section>
     <div class="block-merging">
@@ -311,15 +299,15 @@
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
     <form class="communication-form__form" action="https://echo.htmlacademy.ru" method="post">
-      <span class="popup-form__row">
+      <span class="popup__row">
         <label class="visual-hidden" for="user-name">Представьтесь</label>
         <input class="communication-form__input" id="user-name" type="text" name="user-name" placeholder="Имя">
       </span>
-      <span class="popup-form__row">
+      <span class="popup__row">
         <label class="visual-hidden" for="tel-popup">Укажите ваш номер телефона</label>
         <input class="communication-form__input" id="tel-popup" type="number" name="tel" placeholder="Телефон">
       </span>
-      <span class="popup-form__row">
+      <span class="popup__row">
         <label class="visual-hidden" for="question-popup">Напишите свой вопрос</label>
         <textarea class="communication-form__textarea" id="question-popup" name="question" rows="4"
           placeholder="Ваш вопрос"></textarea>

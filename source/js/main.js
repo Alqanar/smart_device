@@ -8,6 +8,7 @@ var nameInut = popup.querySelector('#user-name');
 var popupForm = popup.querySelector('form');
 var telInput = popup.querySelector('#tel-popup');
 var questionTextarea = popup.querySelector('#question-popup');
+var body = document.querySelector('body');
 
 var footer = document.querySelector('.main-footer');
 var menuContainer = footer.querySelector('.main-footer__menu');
@@ -21,12 +22,14 @@ var closePopup = function () {
   popup.classList.remove('popup--show');
   overlay.classList.remove('overlay--show');
   popup.classList.remove('popup--error');
+  body.style.overflow = 'auto';
 };
 
 buttonConacts.addEventListener('click', function (event) {
   event.preventDefault();
   popup.classList.add('popup--show');
   overlay.classList.add('overlay--show');
+  body.style.overflow = 'hidden';
   nameInut.focus();
 });
 

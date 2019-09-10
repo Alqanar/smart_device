@@ -68,14 +68,14 @@
   padding-left: 0;
 }
 
-.popup-form__row {
+.popup__row {
   display: inline-block;
   flex-grow: 1;
   flex-wrap: wrap;
   margin-top: 1.68vw;
 }
 
-.popup-form__row,
+.popup__row,
 .popup input,
 .popup textarea {
   width: 100%;
