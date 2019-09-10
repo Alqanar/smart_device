@@ -79,6 +79,8 @@
   line-height: 0.73vw;
   color: rgba($white-color, 0.5);
   transform: rotate(-90deg);
+  transition-duration: 0.4s;
+  transition-property: color;
 
   &:hover,
   &:focus {

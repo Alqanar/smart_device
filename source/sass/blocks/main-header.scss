@@ -48,6 +48,8 @@
   &:hover svg path,
   &:focus svg path {
     color: $blue-color;
+    transition-duration: 0.4s;
+    transition-property: color, fill;
     fill: $white-color;
   }
 }

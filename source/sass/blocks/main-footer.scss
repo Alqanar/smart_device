@@ -81,6 +81,8 @@
   font-size: 0.78vw;
   line-height: 1.3vw;
   color: inherit;
+  transition-duration: 0.3s;
+  transition-property: color;
   outline: none;
 
   &:hover,
@@ -131,6 +133,8 @@
 
 .main-footer__link {
   color: inherit;
+  transition-duration: 0.3s;
+  transition-property: color;
 
   &:hover,
   &:focus {
