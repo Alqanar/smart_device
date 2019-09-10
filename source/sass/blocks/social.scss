@@ -3,14 +3,9 @@
   flex-wrap: wrap;
 }
 
-.social__item {
-  margin-right: 0.31vw;
-}
-
 .social__link {
-  padding: 0.26vw;
+  padding: 1.25vw .4vw .26vw;
   outline: none;
-  padding-top: 1.25vw;
 
   &:hover svg path,
   &:focus svg path{
@@ -42,7 +37,7 @@
   }
 
   .social__item:not(:last-child) {
-    margin-right: 1.6vw;
+    margin-right: 1.3vw;
   }
 }
 
