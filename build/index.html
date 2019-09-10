@@ -151,16 +151,16 @@
             <div class="communication-form__wrapper-input">
               <span class="communication-form__row communication-form__row--input">
                 <label class="visual-hidden" for="name">Представьтесь</label>
-                <input id="name" type="text" name="name" value="Имя" required="">
+                <input id="name" type="text" name="name" placeholder="Имя" required="">
               </span>
               <span class="communication-form__row communication-form__row--input">
-                <label class="visual-hidden" for="tel">Укажите ваш номер телефона</label>
-                <input id="tel" type="tel" name="tel" value="Телефон" required="">
+                <label class="visual-hidden" for="phone">Укажите ваш номер телефона</label>
+                <input id="phone" type="number" name="phone" placeholder="Телефон" required="">
               </span>
             </div>
             <span class="communication-form__row communication-form__row--textarea">
               <label class="visual-hidden" for="question">Напишите свой вопрос</label>
-              <textarea id="question" name="question" rows="7" placeholder="Ваш вопрос"></textarea>
+              <textarea id="question" name="question" rows="7" placeholder="Ваш вопрос" required=""></textarea>
             </span>
             <div class="communication-form__wrapper-button">
               <button class="button button--form communication-form__button" type="submit">Задать вопрос</button>
@@ -285,7 +285,7 @@
       </span>
       <span class="popup-form__row">
         <label class="visual-hidden" for="tel-popup">Укажите ваш номер телефона</label>
-        <input class="communication-form__input" id="tel-popup" type="tel" name="tel" placeholder="Телефон">
+        <input class="communication-form__input" id="tel-popup" type="number" name="tel" placeholder="Телефон">
       </span>
       <span class="popup-form__row">
         <label class="visual-hidden" for="question-popup">Напишите свой вопрос</label>

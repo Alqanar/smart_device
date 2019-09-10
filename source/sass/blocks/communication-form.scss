@@ -3,13 +3,13 @@
   background-color: $blue-color;
 
   &--back {
-    background-image: url("../img/form@1x.jpg");
+    background-image: url("../img/form@1x.png");
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
     background-size: 100vw auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/form@2x.jpg");
+    background-image: url("../img/form@2x.png");
     }
   }
 }
@@ -90,6 +90,7 @@
   padding-right: 2.66vw;
   text-transform: inherit;
 
+
   &:hover {
     border: 1px solid $white-color;
   }
@@ -98,12 +99,19 @@
     border: 1px solid darken($blue-color, 20%);
   }
 
-  &:required:invalid {
-    border: 1px solid $input-error;
+  &:focus::-webkit-input-placeholder {
+    opacity: 0; 
+    transition-duration: 0.4s; 
+    transition-property: opacity;
+    transition-timing-function: ease;
   }
 
   &::-webkit-input-placeholder {
     color: inherit;
+    opacity: 1; 
+    transition-duration: 0.3s; 
+    transition-property: opacity;
+    transition-timing-function: ease;
   }
 }
 
@@ -111,10 +119,15 @@
   height: 2.6vw;
 }
 
+.communication-form form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .communication-form form textarea {
   width: 100%;
   padding-bottom: 0.73vw;
   padding-top: 0.73vw;
+  resize: none;
 }
 
 .communication-form__wrapper-button {
