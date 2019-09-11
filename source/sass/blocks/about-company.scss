@@ -1,14 +1,14 @@
 .about-company__wrapper {
   position: relative;
   padding: 3.9vw 2.1vw 5.7vw 10.9vw;
-  background-image: url("../img/2005@1x.jpg");
+  background-image: url("../img/2005@1x.png");
   background-repeat: no-repeat;
   background-position: 0vw 4vw;
   background-size: 11.51vw auto;
   max-width: 64vw;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/2005@2x.jpg");
+    background-image: url("../img/2005@2x.png");
   }
 }
 
@@ -38,13 +38,13 @@
 @media (max-width: $tablet-width) {
   .about-company__wrapper {
     padding: 3.26vw 3vw 10.8vw 27.34vw;
-    background-image: url("../img/2005_tablet@1x.jpg");
+    background-image: url("../img/2005_tablet@1x.png");
     background-position: 0 3vw;;
     background-size: 31.8vw auto;
     max-width: 100%;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/2005_tablet@2x.jpg");
+      background-image: url("../img/2005_tablet@2x.png");
     }
   }
 

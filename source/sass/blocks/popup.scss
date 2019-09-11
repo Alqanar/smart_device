@@ -106,28 +106,38 @@
     width: 1.15vw;
     height: 0.05vw;
     background-color: $white-color;
+    transition-duration: 0.4s;
+    transition-property: transform;
     content: "";
   }
 
   &::before {
-    transform: rotate(45deg);
+    transform: rotate(45deg) scaleY(1);
+    
   }
 
   &::after {
-    transform: rotate(-45deg);
+    transform: rotate(-45deg) scaleY(1);
   }
 
   &:hover::before,
-  &:focus::before,
-  &:hover::after,
-  &:focus::after {
-    height: 0.1vw;
+  &:focus::before {
+    transform: rotate(45deg) scaleY(2);
   }
 
-  &:active::before,
-  &:active::after{
-    height: 0.1vw;
+  &:hover::after,
+  &:focus::after {
+    transform: rotate(-45deg) scaleY(2);
+  }
+
+  &:active::before {
     background-color: darken($blue-color, 20%);
+    transform: rotate(45deg) scaleY(2);
+  }
+
+  &:active::after{
+    background-color: darken($blue-color, 20%);
+    transform: rotate(-45deg) scaleY(2);
   }
 }
 

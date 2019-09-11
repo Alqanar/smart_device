@@ -9,16 +9,17 @@
 
   &:hover svg path,
   &:focus svg path{
-    transition-duration: 0.4s;
-    transition-property: fill;
     fill: $blue-color;
   }
 
   &:active svg path {
-    transition-duration: 0.4s;
-    transition-property: fill;
     fill: darken($blue-color, 10%);
   }
+}
+
+.social__link svg path {
+  transition-duration: 0.4s;
+  transition-property: fill;
 }
 
 .social .social__link svg {
