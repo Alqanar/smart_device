@@ -21,7 +21,7 @@
   padding-bottom: 24px;
 }
 
-.about-company__wrapper-text--hidden {
+.about-company__hidden-text {
   display: none;
 }
 
@@ -54,13 +54,14 @@
     padding-bottom: 3.2vw;
   }
 
-  .about-company__wrapper-text {
-    &--all {
-      display: none;
-    }
-    &--hidden {
-      display: block;
-    }
+  .about-company__hidden-text {
+    display: inline-block;
+    width: 0.26vw;
+    margin-left: -1vw;
+  }
+
+  .about-company__all-text {
+    display: none;
   }
 
   .about-company p {
@@ -70,7 +71,7 @@
 
   .about-company__button {
     padding: 1.82vw 6.51vw;
-    margin-top: 3vw;
+    margin-top: 3.3vw;
     margin-left: 0.39vw;
   }
 }
@@ -88,20 +89,24 @@
   .about-company h2 {
     font-size: 8.75vw;
     line-height: 12.3vw;
-    padding-bottom: 7.2vw;
+    padding-bottom: 6.5vw;
   }
 
   .about-company p {
     padding-left: 1vw;
   }
 
+  .about-company__hidden-text {
+    margin-left: -3vw;
+}
+
   .about-company p:not(:last-child) {
-    padding-bottom: 14.4vw;
+    padding-bottom: 12.4vw;
   }
 
   .about-company__button {
     padding: 4.2vw 15.4vw;
-    margin-top: 8vw;
+    margin-top: 6.8vw;
     margin-left: 1vw;
   }
 }
