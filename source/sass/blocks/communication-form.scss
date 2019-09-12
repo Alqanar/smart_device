@@ -290,16 +290,16 @@
   
     &::before {
     top: 1.3vw;
-    width: 2.21vw;
-    height: 2.21vw;
+    width: 2.1vw;
+    height: 2.1vw;
     }
   }
 
   .communication-form form .communication-form__label--checkbox input:checked + small::after {
     top: 2vw;
-    left: 1vw;
-    width: 1.04vw;
-    height: 0.65vw;
+    left: 0.9vw;
+    width: 1.2vw;
+    height: .8vw;
   }
 }
 

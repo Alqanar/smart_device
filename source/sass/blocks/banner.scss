@@ -62,11 +62,11 @@
 }
 
 .banner__button {
-  padding: 0.95vw 2.4vw;
+  width: 21.24vw;
+  padding: 0.95vw;
   margin-top: 2.2vw;
   letter-spacing: 0.8px;
   margin-left: 9.7vw;
-  max-width: 21.3vw;
 
   &--mobile {
     display: none;
@@ -139,11 +139,11 @@
   }
 
   .banner__button {
-    padding: 2.34vw 4vw 2.47vw 4.04vw;
+    width: 49.3vw;
+    padding: 2.34vw;
     margin-top: 7.1vw;
     letter-spacing: 0.8px;
     margin-left: 15vw;
-    max-width: 50vw;
   }
 
   .banner__wrapper img {
@@ -173,7 +173,7 @@
 
   .banner__wrapper {
     padding-left: 4.8vw;
-    padding-right: 4.6vw;
+    padding-right: 5.3vw;
     padding-bottom: 21.74vw;
   }
 
@@ -202,13 +202,13 @@
   }
 
   .banner__button {
+    width: 100%;
     font-size: 5vw;
     line-height: 6.72vw;
     margin-left: 0.9vw;
     margin-top: 12.5vw;
     padding-top: 5vw;
     padding-bottom: 5.47vw;
-    max-width: 100%;
 
     &--hidden {
       display: none;
