@@ -2,15 +2,18 @@
   0% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @keyframes shake {
   0%,
   100% {
     transform: translateX(0);
   }
+
   10%,
   30%,
   50%,
@@ -18,6 +21,7 @@
   90% {
     transform: translateX(-10px);
   }
+
   20%,
   40%,
   60%,
@@ -33,7 +37,7 @@
   z-index: 4;
   display: none;
   width: 25.52vw;
-  padding: 1.56vw 2.0vw 1.875vw;
+  padding: 1.56vw 2vw 1.875vw;
   margin-left: -12.76vw;
 
   &--show {
@@ -113,7 +117,6 @@
 
   &::before {
     transform: rotate(45deg) scaleY(1);
-    
   }
 
   &::after {
@@ -135,7 +138,7 @@
     transform: rotate(45deg) scaleY(2);
   }
 
-  &:active::after{
+  &:active::after {
     background-color: darken($blue-color, 20%);
     transform: rotate(-45deg) scaleY(2);
   }
@@ -157,7 +160,7 @@
 
 .popup form .popup__label input:checked + small::after {
   top: 2.14vw;
-  left: 0.21vw; 
+  left: 0.21vw;
 }
 
 .popup__button {

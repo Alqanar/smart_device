@@ -1,6 +1,7 @@
 .main-header {
   background-color: $dark-color;
 }
+
 .main-header__wrapper {
   position: relative;
   z-index: 3;
@@ -9,7 +10,7 @@
   margin: 0 auto;
   max-width: 74.79vw;
   padding-top: 1.7vw;
-  padding-left: .2vw;
+  padding-left: 0.2vw;
   padding-right: 0.4vw;
   justify-content: space-between;
 }
@@ -95,7 +96,7 @@
     padding-left: 3.125vw;
     padding-right: 2.6vw;
   }
-  
+
   .main-header .main-header__logo img {
     width: 26.3vw;
     height: 6.77vw;
@@ -130,7 +131,7 @@
     width: 3.255vw;
     height: 2.34vw;
   }
-  
+
   .main-header .main-header__link--phone svg {
     width: 3.125vw;
     height: 3.125vw;
@@ -165,11 +166,10 @@
       width: 7.8vw;
       height: 5.9vw;
     }
-    
+
     .main-header .main-header__link--phone svg {
       width: 7.5vw;
       height: 7.5vw;
     }
   }
-
 }

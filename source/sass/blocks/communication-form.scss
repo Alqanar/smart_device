@@ -9,7 +9,7 @@
     background-size: 100vw auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/form@2x.png");
+      background-image: url("../img/form@2x.png");
     }
   }
 }
@@ -18,7 +18,7 @@
   display: flex;
   max-width: 64vw;
   padding-top: 4.84vw;
-  padding-bottom: 5.78vw
+  padding-bottom: 5.78vw;
 }
 
 .communication-form__paper-airplan {
@@ -91,7 +91,7 @@
   padding-left: 0.8vw;
   padding-right: 2.66vw;
   text-transform: inherit;
-  -webkit-appearance: none;
+  appearance: none;
 
 
   &:hover {
@@ -103,16 +103,16 @@
   }
 
   &:focus::-webkit-input-placeholder {
-    opacity: 0; 
-    transition-duration: 0.4s; 
+    opacity: 0;
+    transition-duration: 0.4s;
     transition-property: opacity;
     transition-timing-function: ease;
   }
 
   &::-webkit-input-placeholder {
     color: inherit;
-    opacity: 1; 
-    transition-duration: 0.3s; 
+    opacity: 1;
+    transition-duration: 0.3s;
     transition-property: opacity;
     transition-timing-function: ease;
   }
@@ -123,7 +123,7 @@
 }
 
 .communication-form form input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .communication-form form textarea {
@@ -213,14 +213,15 @@
 
   .communication-form__wrapper-content {
     max-width: 100%;
+    padding-left: 11.46vw;
   }
 
   .communication-form {
     &--back {
       background-image: none;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: none;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: none;
       }
     }
   }
@@ -233,10 +234,6 @@
     max-width: 80vw;
     padding-left: 0.52vw;
     padding-top: 7.03vw;
-  }
-
-  .communication-form__wrapper-content {
-    padding-left: 11.46vw;
   }
 
   .communication-form h2 + p {
@@ -287,11 +284,11 @@
   .communication-form form .communication-form__label--checkbox small {
     font-size: 1.82vw;
     line-height: 2.1vw;
-  
+
     &::before {
-    top: 1.3vw;
-    width: 2.1vw;
-    height: 2.1vw;
+      top: 1.3vw;
+      width: 2.1vw;
+      height: 2.1vw;
     }
   }
 
@@ -299,7 +296,7 @@
     top: 2vw;
     left: 0.9vw;
     width: 1.2vw;
-    height: .8vw;
+    height: 0.8vw;
   }
 }
 
@@ -374,7 +371,7 @@
   .communication-form form .communication-form__label--checkbox small {
     font-size: 4.4vw;
     line-height: 5.1vw;
-  
+
     &::before {
       top: 9.8vw;
       left: 0;

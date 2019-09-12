@@ -24,7 +24,8 @@
   height: 26.823vw;
 }
 
-.banner h1, .banner p {
+.banner h1,
+.banner p {
   position: relative;
   margin: 0;
   color: $white-color;
@@ -32,11 +33,11 @@
 
 .banner h1 {
   z-index: 2;
-  font-family: "Roboto Condensed","Arial",sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 4.17vw;
   line-height: 4.17vw;
   font-weight: 700;
-  letter-spacing: .29vw;
+  letter-spacing: 0.29vw;
   text-transform: uppercase;
   padding-top: 18.13vw;
   padding-left: 4.62vw;
@@ -97,7 +98,7 @@
     background-image: url("../img/back_dark_tablet@1x.jpg");
     background-position: top center;
     margin-top: -9.6vw;
-  
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/back_dark_tablet@2x.jpg");
     }
@@ -109,7 +110,7 @@
   }
 
   .banner__wrapper-title {
-    margin-top: 24.48vw;;
+    margin-top: 24.48vw;
     margin-left: 8.3vw;
   }
 
@@ -129,12 +130,12 @@
     padding-top: 3.78vw;
     padding-left: 15vw;
     max-width: 61.2vw;
-  
+
     &::before {
       top: 5.776vw;
       left: 8.6vw;
       width: 4.3vw;
-      height: .26vw;
+      height: 0.26vw;
     }
   }
 
@@ -165,7 +166,7 @@
     background-image: url("../img/back_dark_mobile@1x.jpg");
     background-position: top center;
     margin-top: -19vw;
-  
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/back_dark_mobile@2x.jpg");
     }
@@ -192,7 +193,7 @@
     padding-top: 8.4vw;
     padding-left: 16vw;
     max-width: 100%;
-      
+
     &::before {
       top: 13.4vw;
       left: 0.8vw;
